@@ -3,7 +3,7 @@ from ..games.total import game
 
 
 def main():
-    game('even')
+    game('calc')
 
 
 if __name__ == '__main__':
