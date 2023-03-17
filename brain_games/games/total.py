@@ -1,14 +1,15 @@
-
 import prompt
 
 from .calc import game_calc
 from .even_game import game_even
 from .great_com_div import game_gcd
+from .arifmetic import game_arif_progr
 
 GAMES = {
     'even': game_even,
     'calc': game_calc,
-    'gcd': game_gcd
+    'gcd': game_gcd,
+    'arifmetic': game_arif_progr
 }
 
 
