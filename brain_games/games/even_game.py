@@ -1,5 +1,6 @@
-import prompt
 import random
+
+import prompt
 
 
 def is_even(number):

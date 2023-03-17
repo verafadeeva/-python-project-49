@@ -1,11 +1,14 @@
-import prompt
-from .even_game import game_even
-from .calc import game_calc
 
+import prompt
+
+from .calc import game_calc
+from .even_game import game_even
+from .great_com_div import game_gcd
 
 GAMES = {
     'even': game_even,
-    'calc': game_calc
+    'calc': game_calc,
+    'gcd': game_gcd
 }
 
 
