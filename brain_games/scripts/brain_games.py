@@ -17,7 +17,7 @@ def game():
                 print(f"Попробуй еще раз, {name}!")
                 break
         else:
-            print(f'Поздравляю, {name}! Ты выиграл))')
+            print(f'Поздравляю, {name}! Это победа!))')
         ans = game_again()
         if ans == 'n':
             print(f'До встречи, {name}!')
