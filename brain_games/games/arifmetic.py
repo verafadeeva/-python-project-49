@@ -18,9 +18,9 @@ def output_for_user(sequence):
 
 
 def game_arif_progr():
-    print('What number is missing in the progression?')
+    print('Какое число пропущено в арифметической прогрессии?')
     items = arifmetic()
     cor_ans, seq = output_for_user(items)
-    print(f'Question: {seq}')
-    answer = prompt.integer('Your answer: ')
+    print(f'Последовательность: {seq}')
+    answer = prompt.integer('Твой ответ: ')
     return answer, cor_ans

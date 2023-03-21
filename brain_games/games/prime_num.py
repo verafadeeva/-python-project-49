@@ -13,9 +13,9 @@ def is_prime(number):
 
 
 def game_prime():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    print('Определи, простое ли это число. "yes": да, "no": нет')
     number = random.randint(1, 100)
     cor_ans = is_prime(number)
-    print(f'Question: {number}')
-    answer = (prompt.string('Your answer: ')).lower()
+    print(f'Число: {number}')
+    answer = (prompt.string('Твой ответ: ')).lower()
     return answer, cor_ans

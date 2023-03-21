@@ -7,35 +7,41 @@ from .arifmetic import game_arif_progr
 from .prime_num import game_prime
 
 GAMES = {
-    'even': game_even,
-    'calc': game_calc,
-    'gcd': game_gcd,
-    'arifmetic': game_arif_progr,
-    'prime': game_prime
+    1: game_even,
+    2: game_calc,
+    3: game_gcd,
+    4: game_arif_progr,
+    5: game_prime
 }
 
 
 def welcome_user():
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = prompt.string('Как тебя зовут? ')
+    print(f'Привет, {name}!')
     return name
+
+
+def choose_game(name):
+    print(f'{name}, во что сыграем?')
+    print('Выбери игру и введи ее номер: ')
+    print("""    1: Угадай - это четное число?,
+    2: Посчитай результат выражения,
+    3: Найди наибольший общий делитель двух чисел,
+    4: Найди пропущенное число в арифметической прогрессии,
+    5: Угадай - это постое число? """)
+    while True:
+        name_game = prompt.integer('Что выбираешь? ')
+        if name_game in GAMES:
+            return name_game
+        print('Такой игры нет. Попробуй еще раз')
 
 
 def check_answer(ans, cor_ans):
     return ans == cor_ans
 
 
-def game(name_game):
-    name = welcome_user()
-    for _ in range(3):
-        answer, correct_ans = GAMES.get(name_game)()
-        if check_answer(answer, correct_ans):
-            print('Correct!')
-        else:
-            print(f'"{answer}" is wrong answer ;(. Correct answer '
-                  f'was "{correct_ans}"')
-            print(f"Let's try again, {name}!")
-            break
-    else:
-        print(f'Congratulations, {name}!')
+def game_again():
+    print('Сыграем еще раз? Жми "y" или "n"')
+    answer = prompt.string()
+    return answer

@@ -10,9 +10,9 @@ def is_even(number):
 
 
 def game_even():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Определи, четное ли это число. "yes": да, "no": нет')
     number = random.randint(1, 100)
     cor_ans = is_even(number)
-    print(f'Question: {number}')
-    answer = (prompt.string('Your answer: ')).lower()
+    print(f'Число: {number}')
+    answer = (prompt.string('Твой ответ: ')).lower()
     return answer, cor_ans

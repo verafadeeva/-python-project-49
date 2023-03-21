@@ -22,12 +22,12 @@ def output_for_user(num1, num2, operation):
 
 
 def game_calc():
-    print('What is the result of the expression?')
+    print('Посчитай результат выражения.')
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
     operation = random.choice(['+', '-', '*'])
     cor_ans = calculate(number1, number2, operation)
     question = output_for_user(number1, number2, operation)
-    print(f'Question: {question}')
-    ans = prompt.integer('Your answer: ')
+    print(f'Выражение: {question}')
+    ans = prompt.integer('Твой ответ: ')
     return ans, cor_ans

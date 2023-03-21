@@ -12,10 +12,10 @@ def gr_com_div(num1, num2):
 
 
 def game_gcd():
-    print('Find the greatest common divisor of given numbers.')
+    print('Найди наибольший общий делитель двух чисел.')
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
     cor_ans = gr_com_div(number1, number2)
-    print(f'Question: {number1} {number2}')
-    answer = prompt.integer('Your answer: ')
+    print(f'Числа: {number1} {number2}')
+    answer = prompt.integer('Твой ответ: ')
     return answer, cor_ans
