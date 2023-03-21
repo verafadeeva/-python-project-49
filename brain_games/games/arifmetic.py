@@ -6,7 +6,7 @@ import prompt
 def arifmetic():
     step = random.randint(1, 10)
     start = random.randint(1, 50)
-    stop = start + step * 9
+    stop = start + step * 10
     return [str(i) for i in range(start, stop, step)]
 
 
