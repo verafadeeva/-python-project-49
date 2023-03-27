@@ -4,7 +4,7 @@
 # Brain-games
 
 ### Introduction
-This is my first pet-project for creating simple console games. I've took the base idea from Hexlet (educational platform for teaching programming) and a little bit improved it.
+This is my first pet-project for creating simple console games. I took the base idea from Hexlet (educational platform for teaching programming) and a little bit improved it.
 
 ### Installation
 
